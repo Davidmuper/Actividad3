@@ -6,27 +6,29 @@ public class Libro {
     private String autor;
     private int paginas;
 
+    // Constructor vacío
     public Libro() {
         titulo = "Desconocido";
         autor = "Anónimo";
         paginas = 0;
     }
 
+    // Constructor con título y autor
     public Libro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = 0;
     }
 
+    // Constructor completo
     public Libro(String titulo, String autor, int paginas) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
     }
 
-    public void mostrarInfo() {
-        System.out.println("Título: " + titulo);
-        System.out.println("Autor: " + autor);
-        System.out.println("Páginas: " + paginas);
+    // Método para mostrar los detalles del libro
+    public void mostrarDetalles() {
+        System.out.println("Libro: " + titulo + " | Autor: " + autor + " | Páginas: " + paginas);
     }
 }

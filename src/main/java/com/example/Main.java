@@ -10,12 +10,16 @@ public class Main {
 
         System.out.println("===== EJERCICIO 1: LIBRO =====");
 
-        Libro libro = new Libro("El Principito", "Antoine de Saint-Exupéry", 96);
+        Libro libro1 = new Libro();
+        libro1.mostrarDetalles();
 
-        libro.mostrarInfo();
+        Libro libro2 = new Libro("Harry Potter", "J.K. Rowling");
+        libro2.mostrarDetalles();
+
+        Libro libro3 = new Libro("El Señor de los Anillos", "J.R.R. Tolkien", 1200);
+        libro3.mostrarDetalles();
 
         System.out.println();
-
 
         // =========================
         // EJERCICIO 2: CUENTA BANCARIA
@@ -32,12 +36,11 @@ public class Main {
 
         System.out.println("Saldo después del depósito: " + cuenta.getSaldo());
 
-        cuenta.retirar(1000000);
+        cuenta.retirar(100000);
 
         System.out.println("Saldo después del retiro: " + cuenta.getSaldo());
 
         System.out.println();
-
 
         // =========================
         // EJERCICIO 3: ESTUDIANTE
@@ -46,25 +49,20 @@ public class Main {
         System.out.println("===== EJERCICIO 3: ESTUDIANTE =====");
 
         Estudiante estudiante1 = new Estudiante("Pedro", 21, 2.5);
-
         estudiante1.mostrarInfo();
 
         System.out.println();
 
         Estudiante estudiante2 = new Estudiante("Ana", 20, 4.2);
-
         estudiante2.mostrarInfo();
 
         System.out.println();
 
         // Probar los setters
-
         estudiante1.setEdad(22);
-
         estudiante1.setPromedio(3.5);
 
         System.out.println("Información después de modificar los datos:");
-
         estudiante1.mostrarInfo();
     }
 }
